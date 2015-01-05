@@ -156,7 +156,7 @@ a {
 .site-name {
   float: left;
   width: 120px;
-  height: $size-a;
+  height: $size-a + 1;
   margin: 0 35px 0 0;
   line-height: $size-a;
   color: #fff;
@@ -214,6 +214,10 @@ a {
 
       @media only screen and (min-width: $break-large) {
         margin: 0 0 0 38px;
+      }
+
+      a {
+        @include transition(color 0.25s);
       }
     }
   }
@@ -371,7 +375,7 @@ a {
 /* SMALL VER */
 .small-site-name {
   .site-name {
-    height: $size-b;
+    height: $size-b + 1;
     line-height: $size-b;
   }
 }
@@ -389,6 +393,7 @@ a {
     .container { border-color: #d9d9d9; background: #fff; }
     .site-name { background: $brand-primary; }
     .navigation a { color: $brand-secondary; }
+    .navigation a:hover { color: $brand-primary; }
     .navigation .menu-toggle span { color: $brand-secondary; }
     .animated-hamburger span { background: #000; }
 }

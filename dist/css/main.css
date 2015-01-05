@@ -2,7 +2,7 @@
 
     Project: Vats
     Author:
-    Last updated: Mon Jan 05 2015 19:09:27
+    Last updated: Mon Jan 05 2015 20:03:50
 
     1. Normalize
     2. Fonts
@@ -693,7 +693,7 @@ a {
 .site-name {
   float: left;
   width: 120px;
-  height: 130px;
+  height: 131px;
   margin: 0 35px 0 0;
   line-height: 130px;
   color: #fff;
@@ -765,6 +765,11 @@ a {
     margin: 0 0 0 38px;
   }
 
+}
+
+.navigation ul li a {
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 @media only screen and (min-width: 768px) {
@@ -915,7 +920,7 @@ a {
 
 .small-site-name .site-name,
 .header.not-top .site-name {
-  height: 85px;
+  height: 86px;
   line-height: 85px;
 }
 
@@ -960,6 +965,12 @@ a {
 .header.menu-opened .navigation a,
 .header.not-top .navigation a {
   color: #252a2d;
+}
+
+.inverted .navigation a:hover,
+.header.menu-opened .navigation a:hover,
+.header.not-top .navigation a:hover {
+  color: #ff0000;
 }
 
 .inverted .navigation .menu-toggle span,
