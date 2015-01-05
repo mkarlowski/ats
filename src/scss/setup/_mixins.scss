@@ -1,0 +1,17 @@
+
+// Use with @extend %clearfix;
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin transition($transition-property...) {
+    -webkit-transition: $transition-property;
+    -moz-transition: $transition-property;
+    -ms-transition: $transition-property;
+    -o-transition: $transition-property;
+    transition: $transition-property;
+}

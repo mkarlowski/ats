@@ -1,0 +1,47 @@
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')</script>
+<!-- build:js js/plugins.min.js -->
+<script src="js/headroom.min.js"></script>
+<script src="js/scrollReveal.min.js"></script>
+<!-- endbuild -->
+<script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+  function initialize() {
+    var mapCanvas = document.getElementById('map-canvas');
+    var myLatlng = new google.maps.LatLng(53.3442411, 15.0465188);
+    var mapOptions = {
+      center: myLatlng,
+      zoom: 17,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    // To add the marker to the map, use the 'map' property
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title:"Hello World!"
+    });
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+
+  // Headroom
+  var myElement = document.querySelector("header");
+  var headroom  = new Headroom(myElement, {
+    "offset": 20,
+    "tolerance": 20,
+    "classes": {
+      "initial": "top",
+      "pinned": "pinned",
+      "unpinned": "unpinned",
+      "top": "top",
+      "notTop": "not-top"
+    }
+  });
+  headroom.init();
+
+  // ScrollReveal
+  window.sr = new scrollReveal( );
+
+</script>

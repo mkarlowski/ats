@@ -1,0 +1,17 @@
+{
+  "generator-xh": {
+    "config": {
+      "projectName": "Vats",
+      "useBranding": false,
+      "reloader": "BrowserSync",
+      "server": true,
+      "cssPreprocessor": "SCSS",
+      "ignoreDist": true,
+      "isWP": false,
+      "features": [
+        "useSprites",
+        "useModernizr"
+      ]
+    }
+  }
+}
