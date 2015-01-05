@@ -30,6 +30,7 @@
     menuToggle: function() {
       $('.menu-toggle').click(function() {
         $('.header').toggleClass('menu-opened');
+        $(this).find('.animated-hamburger').toggleClass('open');
       });
     },
 

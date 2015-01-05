@@ -2,7 +2,7 @@
 
     Project: Ats
     Author: Michal Karlowski (m.karlowski@yahoo.pl)
-    Last updated: Sun Dec 21 2014 20:17:11
+    Last updated: Mon Jan 05 2015 18:22:53
 
    ========================================================================== */
 
@@ -30,6 +30,7 @@
     menuToggle: function() {
       $('.menu-toggle').click(function() {
         $('.header').toggleClass('menu-opened');
+        $(this).find('.animated-hamburger').toggleClass('open');
       });
     },
 
