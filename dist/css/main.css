@@ -2,7 +2,7 @@
 
     Project: Vats
     Author:
-    Last updated: Mon Jan 05 2015 20:03:50
+    Last updated: Wed Jan 07 2015 19:07:03
 
     1. Normalize
     2. Fonts
@@ -785,11 +785,13 @@ a {
   color: #fff;
   text-decoration: none;
   padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (min-width: 768px) {
   .navigation a {
     padding: 0;
+    border-top: 0 none;
   }
 
 }

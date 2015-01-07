@@ -233,8 +233,11 @@ a {
     color: #fff;
     text-decoration: none;
     padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
     @media only screen and (min-width: $break-medium) {
       padding: 0;
+      border-top: 0 none;
     }
 
     &:hover {
